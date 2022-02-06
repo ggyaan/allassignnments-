@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+         // fahrenheit to celsius  c=(f-32)/1.8
+         // celsius to fahrenheit  f=(c*1.8)+32
+         
+
+         function cTof(celsius){
+             const ctemp=celsius;
+             const ctofareh=ctemp*9/5+32;
+             const message=ctofareh;
+             console.log(message);
+         }
+         function fToc(fahrenheit){
+             const ftemp=fahrenheit;
+             const ftocelsius=(ftemp-32)*5/9;
+             const message=ftocelsius;
+             console.log(message);
+         }
+         fToc(40);
+         cTof(60);
+
+     </script>
+</body>
+</html>
