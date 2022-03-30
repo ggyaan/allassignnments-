@@ -8,10 +8,17 @@
 </head>
 <body>
     <script>
-             let data=function(){
-                 user=12;
-             }
-             console.log(data);
+             let user=function(userID,firstName,lastName,age,password,email,gender){
+        console.log(`userID:${userID}`);
+        console.log(`firstName:${firstName}`);
+        console.log(`lastName:${lastName}`);
+        console.log(`age:${age}`);
+        console.log(`password:${password}`);
+        console.log(`email:${email}`);
+        console.log(`gender:${gender}`);
+
+    }
+    user('skill','safari','edukeys',20,1234,'gyandapper@gmail.com','male');
 
 
 
