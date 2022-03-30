@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+</head>
+<body>
+    <script>
+       function User( userId, firstName, lastName, password, email, gender, age, accountCreated){
+           this.userId=userId;
+           this.firstName=firstName;
+           this.lastName=lastName;
+           this.password=password;
+           this.email=email;
+           this.gender=gender;
+           this.age=age;
+           this.accountCreated=accountCreated;     
+        }
+       let user= new User('skillsafari','john','edwin',1234,'gyandapper@gmail.com','male',23,'yes its created');
+       console.log(user.userId);
+       console.log(user.firstName);
+       console.log(user.lastName);
+       console.log(user.password);
+       console.log(user.email);
+       console.log(user.gender);
+       console.log(user.age);
+       console.log(user.accountCreated);
+       user.displayAge=function(age){
+            console.log(`${age}`);
+       }
+       user.displayAge(33);
+        
+       user.displayAccountcreated=function(Accountcreated){
+           console.log(`${Accountcreated}`);
+       }
+       user.displayAccountcreated('yes its created');
+
+       // user 2
+
+       let jack= new User('safari','jack','ed',234,'gyan@gmail.com','male',23,'yes its created');
+    console.log(jack);
+
+    //user 3
+
+    let johnaten= new User('skill','johnaten','mary',2244,'johnaten@gmail.com','male',23,'yes its created');
+    console.log(johnaten);
+
+    //user 4
+
+    let cruella=new User('sharma','cruella','devil',9990,'cruella@gmail.com','female',25,'yes its created');
+    console.log(cruella);
+
+    //user 5
+
+    let maleficent=new User('hella','maleficent','crisant',89090,'maleficent@gmail.com','female',22,'yes created');
+
+
+
+
+
+    </script>
+</body>
+</html>
