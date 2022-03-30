@@ -4,28 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Function</title>
 </head>
 <body>
     <script>
-       const display={
-        userID:533,
-        firstName:"cruella",
-        lastName:"devil",
-        password:1234,
-        email:"gyan@gmail.com",
-        gender:"male",
-        age:22,
-        accountCreated:"yupps",
-         };
-        console.log(display.userID);
-        console.log(display.firstName);
-        console.log(display.lastName);
-        console.log(display.password);
-        console.log(display.email);
-        console.log(display.gender);
-        console.log(display.age);
-        console.log(display.accountCreated);
+       function user(userID,firstName,lastName,age,password,email,gender){
+        console.log(`userID:${userID}`);
+        console.log(`firstName:${firstName}`);
+        console.log(`lastName:${lastName}`);
+        console.log(`age:${age}`);
+        console.log(`password:${password}`);
+        console.log(`email:${email}`);
+        console.log(`gender:${gender}`);
+
+        
+    }
+    user('skill','safari','edukeys',20,1234,'gyandapper@gmail.com','male');
+
 
 
 
