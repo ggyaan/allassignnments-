@@ -27,16 +27,43 @@
        console.log(user.gender);
        console.log(user.age);
        console.log(user.accountCreated);
-       user.displayAge=function(age){
-            console.log(`${age}`);
-       }
-       user.displayAge(33);
-        
-       user.displayAccountcreated=function(Accountcreated){
-           console.log(`${Accountcreated}`);
-       }
-       user.displayAccountcreated('yes its created');
+      
+         
+     function DisplayAge(age){
+         this.age=age;
+         this.sayhii=function(){
+            console.log(`${this.age}`);
+         }
+     }
+     let john=new DisplayAge(93);
+     john.sayhii();
 
+     function DisplayAccountcreated(accountCreated){
+         this.accountCreated=accountCreated;
+         this.sayhello=function(){
+            console.log(`${this.accountCreated}`);
+         }
+     }
+     let catherin=new DisplayAccountcreated('welcome');
+     catherin.sayhello(); 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
        // user 2
 
        let jack= new User('safari','jack','ed',234,'gyan@gmail.com','male',23,'yes its created');
